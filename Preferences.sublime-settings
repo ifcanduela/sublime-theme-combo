@@ -1,12 +1,9 @@
 {
     "theme_combos": {
-        "Batman": {
-            "color_scheme": "Packages/User/Batman.tmTheme",
+        "Default":
+        {
+            "color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
             "theme": "Adaptive.sublime-theme"
-        },
-        "Ayu": {
-            "color_scheme": "Packages/ayu/ayu-light.sublime-color-scheme",
-            "theme": "ayu-light.sublime-theme"
         }
     }
 }

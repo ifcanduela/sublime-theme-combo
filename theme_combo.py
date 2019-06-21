@@ -5,6 +5,11 @@ class SaveComboCommand(sublime_plugin.WindowCommand):
     def run(self):
         # Theme Combo: Save current combo
         def save_combo(combo_name):
+            # Load the user preferences
+            user_settings = sublime.load_settings('Preferences.sublime-settings')
+            # Get the user combos
+            theme_combos = user_settings.get("theme_combos")
+
             # Build a new combo
             combo = {}
             # With the current theme
@@ -12,10 +17,6 @@ class SaveComboCommand(sublime_plugin.WindowCommand):
             # And the current color scheme
             combo["color_scheme"] = user_settings.get("color_scheme")
 
-            # Load the user preferences
-            user_settings = sublime.load_settings('Preferences.sublime-settings')
-            # Get the user combos
-            theme_combos = user_settings.get("theme_combos")
             # Add or update the combo
             theme_combos[combo_name] = combo
             # Update the user preferences

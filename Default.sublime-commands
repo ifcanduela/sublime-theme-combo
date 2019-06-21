@@ -1,14 +1,10 @@
 [
     {
         "caption": "Theme Combo: Save current combo",
-        "command": "save_combo",
-        "args": {
-        }
+        "command": "save_combo"
     },
     {
         "caption": "Theme Combo: Load combo",
-        "command": "load_combo",
-        "args": {
-        }
+        "command": "load_combo"
     }
 ]
